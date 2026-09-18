@@ -60,4 +60,6 @@ def delete_user(user_id: int):
 
     del users[user_id]
     
-
+@app.get("/version")
+def get_version():
+    return{"version":"1.0"}
