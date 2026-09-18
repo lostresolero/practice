@@ -62,4 +62,13 @@ def delete_user(user_id: int):
     
 @app.get("/version")
 def get_version():
-    return{"version":"1.0"}
+    return{"version": "1.0"}
+
+
+
+@app.get("/info")
+def get_info():
+    return {
+        "service": "user-api",
+        "version": "1.0"
+    }
