@@ -62,8 +62,11 @@ def delete_user(user_id: int):
     
 @app.get("/version")
 def get_version():
-    return{"version": "1.0"}
+    return{"version":"1.0"}
 
+@app.get("/status")
+def get_status():
+    return {"status": "running"}
 
 
 @app.get("/info")
@@ -77,3 +80,4 @@ def get_info():
 @app.get("/ping")
 def ping():
     return {"message": "pong"}
+
