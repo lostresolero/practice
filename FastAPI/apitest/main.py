@@ -72,3 +72,8 @@ def get_info():
         "service": "user-api",
         "version": "1.0"
     }
+
+
+@app.get("/ping")
+def ping():
+    return {"message": "pong"}
