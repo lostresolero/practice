@@ -77,7 +77,4 @@ def get_info():
     }
 
 
-@app.get("/ping")
-def ping():
-    return {"message": "pong"}
 
